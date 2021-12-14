@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  app:
+    image: xc8-compiler:latest
+    command: tail -f /dev/null
+    ports:
+      - 8000:8000
+    working_dir: /home
+    volumes:
+      - ./PIC18_Symmetrical_Interfaces:/home
